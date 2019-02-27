@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Fix full screen images on gsmls.com",
+  "description": "The banner with agent information gets in the way of the close button when viewing images in full screen. This extension fixes it.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.gsmls.com/*"],
+      "js": ["js/contentScript.js"]
+    }
+  ]
+}
